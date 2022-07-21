@@ -1,0 +1,151 @@
+@import url(../css/common.css);
+@import url(../css/core.css);
+@import url(../css/reset.css);
+@import url(../css/mediaQuery.css);
+
+/* 아이콘 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css");
+
+:root {
+  font-size: 22px;
+}
+
+.ibx2 {
+  width: 1000px;
+  margin: 0 auto;
+  height: 600px;
+  margin-top: calc(var(--nav-height) * 3);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.gray {
+  color: rgba(128, 128, 128, 0.771);
+}
+.white {
+  color: white;
+}
+
+#cont2 * {
+  /* outline: red solid 1px; */
+  box-sizing: border-box;
+}
+
+#cont2 {
+  /* width: 1200px; */
+}
+
+.exhibitCard1 {
+}
+.ticket {
+  border: black solid 2px;
+  border-radius: 10px;
+  padding: 40px;
+  /* padding: 20px; */
+  background-color: black;
+  /* text-align: center; */
+  height: 500px;
+  width: 100%;
+  /* outline: red solid 1px; */
+  box-sizing: border-box;
+}
+
+.mainImg {
+  width: 100%;
+  height: 200px;
+}
+.ticket {
+  width: 450px;
+  border-radius: 10px;
+  padding: 40px;
+  /* padding: 20px; */
+  background-color: black;
+  /* text-align: center; */
+  margin-top: calc(var(--nav-height) * 3);
+  height: 500px;
+  /* width: 100%; */
+  /* outline: red solid 1px; */
+}
+.ticket.card1 {
+  margin: 0 auto;
+}
+.ticketTitle {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.ticket > h6 {
+  font-size: 1.4rem;
+
+  padding: 0;
+  margin-top: 0.5rem;
+}
+.ticket span {
+  font-size: 0.8rem;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.sponsor {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+.sponsor img {
+  vertical-align: bottom;
+}
+.selectBtn {
+  display: flex;
+  border: solid white 1px;
+  width: 70px;
+  height: 30px;
+  float: right;
+  justify-content: center;
+  align-items: center;
+}
+.selectBtn,
+.selectBtn * {
+  cursor: url(../img/svg/64px-Mano_cursor.svg.png) 24 0, pointer;
+}
+.ref {
+  padding: 20px 0 0 0;
+  line-height: 10px;
+}
+.ticket.on {
+  background-color: white;
+}
+.ticket.on .selectBtn {
+  columns: black;
+  border: solid black 1px;
+}
+.ticket.on .white {
+  color: black;
+}
+.confirmBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 30px;
+  border: black solid 2px;
+  width: 300px;
+
+  height: 70px;
+
+  border-radius: 7px;
+}
+
+.confirmBtn,
+.confirmBtn * {
+  cursor: url(../img/svg/64px-Mano_cursor.svg.png) 24 0, pointer;
+}
+
+.infoTicket {
+  text-align: center;
+  margin-bottom: 300px;
+}

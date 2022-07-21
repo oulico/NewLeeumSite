@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* 웹폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oswald:wght@200;400;700&display=swap");
+@import url(./mediaQuery.css);
+/*
+타이틀
+ font-family: 'Oswald', sans-serif; */
+
+.inbox {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.ir {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* 트위터 */
+/* 스프라이트 방식으로 이미지 사용. image replacement (ir)기법으로 웹접근성을 살려라 */
+
+.sns a {
+  /* 블록변경 - 디자인적용  */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sns li:nth-child(1),
+.sns li:nth-child(2),
+.sns li:nth-child(3) {
+  background: url(../img/icons.png) no-repeat;
+  background-position: 0 0;
+  width: 30px;
+  height: 30px;
+}
+.sns li:first-child:hover {
+  background-position: 0 0;
+  vertical-align: middle;
+}
+.sns li:first-child {
+  background-position: 0 -30px;
+  vertical-align: middle;
+}
+.sns li:nth-child(2):hover {
+  background-position: -30px 0;
+  vertical-align: middle;
+}
+.sns li:nth-child(2) {
+  background-position: -30px -30px;
+  vertical-align: middle;
+}
+.sns li:nth-child(3):hover {
+  background-position: -60px 0;
+  vertical-align: middle;
+}
+.sns li:nth-child(3) {
+  background-position: -60px -30px;
+  vertical-align: middle;
+}
+
+.sns li:nth-child(4) {
+  background: url(../img/search.png) no-repeat center/100%;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+ol.sns {
+  margin-top: 20px;
+}
+
+input {
+  border: none;
+  outline: 0;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+/* 검색 버튼 클릭시 인풋창 등장 */
+
+html .sns > li:last-child {
+  position: relative;
+  width: 150px;
+  height: 26px;
+  vertical-align: bottom;
+  border-bottom: 2px solid var(--color-black);
+  transition: width 0.4s ease-in-out;
+  overflow: hidden;
+}
+.searchBlank input[type="text"] {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: transparent;
+}
+
+html .sns > li:last-child.on {
+  width: 0px;
+}
+/* todo: important 안쓰는 법을 강구할 것 */
+
+/* 스크롤 감지하여 nav .gnb 자동 숨기기 토글*/
+
+.top__title {
+  position: fixed;
+  top: 0;
+  height: var(--nav-height);
+  width: 100%;
+  z-index: 999999;
+  background-color: rgb(243, 243, 243);
+}
+/* .top__title::after .on {
+  content: "✕";
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+/* 플로팅 버튼 */
+.top {
+  position: relative;
+}
+.float > h2 {
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  cursor: url(../img/svg/64px-Mano_cursor.svg.png), pointer;
+}
+
+.btn {
+  background-color: white;
+  text-align: center;
+  opacity: 0;
+  cursor: url(../img/svg/64px-Mano_cursor.svg.png), pointer;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  outline: 0;
+  border: 1px solid black;
+  box-shadow: 1px blur #000;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 0;
+  height: 60px;
+  line-height: 60px;
+  bottom: 60px;
+  left: 60px;
+  position: fixed;
+  z-index: 999998;
+  animation: showingBtn 0.4s ease-in-out 10s forwards;
+}
+
+@keyframes showingBtn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 120px;
+    opacity: 1;
+  }
+}
+
+.btn:after {
+  font-family: "Oswald", "Nanum", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  /* line-height: 80px; */
+  color: whitesmoke;
+  font-size: 1rem;
+  content: "예매하기";
+  background-color: var(--color-black);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.btn:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+body {
+  padding-top: var(--nav-height);
+}
+/* tmzm */
+body nav {
+  height: var(--nav-height);
+}
+
+nav.gnb {
+  z-index: 999998;
+  background-color: rgb(243, 243, 243);
+  position: fixed;
+  top: var(--nav-height);
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.412);
+  outline: 2px solid black;
+  font-size: auto;
+}
+
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height)));
+  height: var(--nav-height);
+  /* box-shadow: none; */
+}
+
+/* 모바일 모드 검색창  */
+.searchBarMobile {
+  display: none;
+}

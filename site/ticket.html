@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leeum</title>
+    <link rel="stylesheet" href="./css/ticket.css" />
+    <script src="./js/ticket.js"></script>
+    <script src="./js/core.js"></script>
+  </head>
+
+  <!-- 
+  [ 명명원칙 ]
+  1. 이중 박스
+  2. 시맨틱 내용과 가장 근접하게 내용삽입. (div안에 시맨틱)
+  3. 하위 구조는 상위 구조의 이름을 상속해서 명명한다. (.top .top__menu)
+
+
+ -->
+  <!-- 바디 시작 -->
+  <body class="scbar">
+    <!-- 헤더 -->
+    <div id="top">
+      <header class="top">
+        <div class="top__title">
+          <a class="cursorMano" href="./index.html">
+            <div class="title">
+              <img src="assets/leeumLogo.png" alt="LEEUM" />
+            </div>
+          </a>
+          <!-- 스프라이트를 활용한 sns 이미지  -->
+          <aside>
+            <ol class="sns cursorMano">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCyXVnJijxHsBrzN9AAZ-Yxw"
+                >
+                  <span class="ir" title="리움의 트위터로 이동합니다"
+                    >트위터 바로가기</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/leeummuseumofart/"
+                >
+                  <span class="ir" title="리움의 인스타그램으로 이동합니다"
+                    >인스타그램 바로가기</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/leeumofficial"
+                >
+                  <span class="ir" title="리움의 페이스북으로 이동합니다"
+                    >페이스북 바로가기</span
+                  ></a
+                >
+              </li>
+              <li id="searchBar">
+                <span class="ir">검색</span>
+              </li>
+              <li id="searchBlank" class="on">
+                <input type="text" placeholder="Search.." />
+              </li>
+            </ol>
+          </aside>
+        </div>
+
+       <nav class="gnb">          
+          <div class="searchBarMobile">
+            <div class="searchContainer">
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="Search" id="searchBarMobile" class="searchBlankMobile">
+            </div>
+          </div>
+          <div class="ellipse">
+            <ul>
+              <li class="menu-1 cursorMano">
+                <a href="./index.html#top">HOME</a>
+              </li>
+              <li class="menu-2 cursorMano">
+                <a href="./index.html#sec3">전시개요</a>
+              </li>
+              <li class="menu-3 cursorMano">
+                <a href="./index.html#sec4">작가</a>
+              </li>
+              <li class="menu-4 cursorMano">
+                <a href="./index.html#sec5">작품</a>
+              </li>
+              <li class="menu-5 cursorMano">
+                <a href="./index.html#sec6">미디어</a>
+              </li>
+              <li class="menu-5 cursorMano">
+                <a href="./index.html#sec7">공간</a>
+              </li>
+              <li class="menu-2 cursorMano">
+                <a href="./membership.html">멤버스</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+    <div id="cont2">
+      <div class="cont2 ibx2">
+        <div class="ticket card1">
+          <div class="exhibitCard1 cards">
+            <img
+              class="mainImg"
+              src="./img/이안쳉-웹배너664x374_디지털마케팅-수정-이안쳉 수정.jpg"
+              alt="특별전1"
+            /><br />
+            <h6 class="white ticketTitle">이안쳉: 세계건설</h6>
+            <div class="price">
+              <span class="gray">2022.07.11 ~ 2022. 8. 21</span
+              ><span class="white">무료</span>
+            </div>
+            <span class="gray">장소: M1(고미술) M2(현대미술)</span>
+            <div class="sponsor">
+              <span class="gray">협찬: </span
+              ><img src="./img/samsungcard_ci_w120.png" alt="삼성카드" />
+            </div>
+            <div class="ref">
+              <span class="white">※ M2(현대미술) : ~ 2022.07.20 </span>
+              <div class="selectBtn cursorMano" class="white">
+                <span class="white">선택</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticket card1">
+          <div class="exhibitCard2 cards">
+            <img
+              class="mainImg"
+              src="./img/아트스펙트럼_웹베너.jpg"
+              alt="특별전2"
+            /><br />
+            <h6 class="white ticketTitle">[상설전] 아트스펙트럼2022</h6>
+            <div class="price">
+              <span class="gray">2022.01 ~</span><span class="white">무료</span>
+            </div>
+            <span class="gray">장소: M1(고미술) M2(현대미술)</span>
+            <div class="sponsor">
+              <span class="gray">협찬: </span
+              ><img src="./img/samsungcard_ci_w120.png" alt="삼성카드" />
+            </div>
+            <div class="ref">
+              <span class="white">※ M2(현대미술) : ~ 2022.07.20 </span>
+              <div class="selectBtn cursorMano" class="white">
+                <span class="white">선택</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="confirmBtn"><h4>예매하기</h4></div>
+      <div class="infoTicket">
+        <span class="black">관람을 원하는 전시를 선택해주세요</span>
+      </div>
+    </div>
+
+    <div id="info">
+      <footer class="info info-columns">
+        <div class="info-column__1">
+          <div class="info-column__1__row1 row1">
+            <address class="info-c1-row1">
+              리움미술관 <br />
+              서울특별시 용산구 이태원로55길 60-16 04348 <br />
+              (Tel) 02-2014-6900
+            </address>
+          </div>
+          <div class="info-column__1__row2 row2">
+            <h3>개인정보 처리방침</h3>
+          </div>
+        </div>
+        <div class="info-column__2">
+          <div class="info-column__2__row1">
+            <select>
+              <option value="#">Family Site</option>
+              <option value="http://www.samsungculture.org">
+                삼성문화재단
+              </option>
+              <option value="http://www.hoammuseum.org/html/main/index.asp">
+                호암미술관
+              </option>
+            </select>
+          </div>
+          <div class="info-column__2__row2">
+            <h3>© Leeum Museum of Art. All Rights reserved.</h3>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="./js/searchBar.js"></script>
+  </body>
+</html>

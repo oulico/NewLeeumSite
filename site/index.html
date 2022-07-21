@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leeum</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+
+    <!-- plyr (동영상 플레이어) -->
+    <script src="./js/plyr.min.js"></script>
+    <script src="./js/core.js"></script>
+  </head>
+
+  <!-- 
+  [ 명명원칙 ]
+  1. 이중 박스
+  2. 시맨틱 내용과 가장 근접하게 내용삽입. (div안에 시맨틱)
+  3. 하위 구조는 상위 구조의 이름을 상속해서 명명한다. (.top .top__menu)
+ -->
+  <!-- 바디 시작 -->
+  <body class="scbar">
+    <div class="curtain">
+      <div>
+        <h1 class="curtain1 c1-1">Good artists</h1>
+        <h1 class="curtain1 c1-3">Borrow,</h1>
+      </div>
+      <div>
+        <h1 class="curtain2 c2-1">Great artists</h1>
+        <h1 class="curtain2 c2-2">Steal.</h1>
+      </div>
+      <div>
+        <h3 class="curtain3">Pablo Picasso</h3>
+      </div>
+    </div>
+    <!-- 헤더 -->
+    <div id="top">
+      <header class="top">
+        <div class="top__title">
+          <div class="top__title__videoFBox videoScreenAbsolute">
+            <div class="plyr__video-embed player" id="player">
+              <iframe
+                height="100%"
+                src="https://www.youtube.com/embed/bkLSBqmDS3U?theme=dark&amp;autoplay=0&amp;autohide=0&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;mute=0&amp;loop=1&amp;controls=0"
+                sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"
+                width="80%" preload="auto"
+              >
+              </iframe>
+            </div>
+
+            <div class="closeBtn" id="ianCloseBtn">
+              <i class="fa fa-window-close cursorMano"></i>
+            </div>
+          </div>
+          <a class="cursorMano" href="./index.html">
+            <div class="title">
+              <img src="assets/leeumLogo.png" alt="LEEUM" />
+            </div>
+          </a>
+          <!-- 스프라이트를 활용한 sns 이미지  -->
+          <aside>
+            <ol class="sns cursorMano">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCyXVnJijxHsBrzN9AAZ-Yxw"
+                >
+                  <span class="ir" title="리움의 트위터로 이동합니다"
+                    >트위터 바로가기</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/leeummuseumofart/"
+                >
+                  <span class="ir" title="리움의 인스타그램으로 이동합니다"
+                    >인스타그램 바로가기</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/leeumofficial"
+                >
+                  <span class="ir" title="리움의 페이스북으로 이동합니다"
+                    >페이스북 바로가기</span
+                  ></a
+                >
+              </li>
+              <li id="searchBar">
+                <span class="ir">검색</span>
+              </li>
+              <li id="searchBlank" class="on">
+                <input type="text" placeholder="Search.." />
+              </li>
+            </ol>
+          </aside>
+        </div>
+
+
+
+
+        <nav class="gnb">          
+          <div class="searchBarMobile">
+            <div class="searchContainer">
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="Search" id="searchBarMobile" class="searchBlankMobile">
+            </div>
+          </div>
+          <div class="ellipse">
+            <ul>
+              <li class="menu-1 cursorMano">
+                <a href="#top">HOME</a>
+              </li>
+              <li class="menu-2 cursorMano">
+                <a href="#sec3">전시개요</a>
+              </li>
+              <li class="menu-3 cursorMano">
+                <a href="#sec4">작가</a>
+              </li>
+              <li class="menu-4 cursorMano">
+                <a href="#sec5">작품</a>
+              </li>
+              <li class="menu-5 cursorMano">
+                <a href="#sec6">미디어</a>
+              </li>
+              <li class="menu-5 cursorMano">
+                <a href="#sec7">공간</a>
+              </li>
+              <li class="menu-2 cursorMano">
+                <a href="./membership.html">멤버스</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+ 
+
+
+
+
+      </header>
+      <a href="./ticket.html">
+        <div class="float btn"></div>
+      </a>
+    </div>
+    <div id="cont">
+      <main class="cont">
+        <section class="ibx section-1">
+          <h1>ART</h1>
+          <h1>SPECTRUM</h1>
+          <h1>2022</h1>
+        </section>
+        <section id="sec2" class="ibx section-2 opacity0 on">
+          <div class="section-2__intro">
+            <span>
+              <h3>
+                국내외 젊은 작가들과 함께 준비한 2022년 리움의 첫 기획전
+                <br />
+                &lt;아트스펙트럼2022&gt; 와 &lt;이안 쳉: 세계건설&gt;을
+                만나보시기 바랍니다.
+              </h3>
+            </span>
+          </div>
+          <div class="section-2__name">
+            <h1>IAN CHENG</h1>
+            <h1>WORLDING</h1>
+          </div>
+          <div class="section-2__vidBox">
+            <video
+              id="vid"
+              type="video/mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              playsinline
+              loop
+              muted
+            >
+              <source src="assets/video/mVidV2.mp4" />
+            </video>
+            <a class="fi fi-play cursorMano" id="mainPlayBtn">
+              <span class="ir">play</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="sec3" class="ibx slideUp section-3">
+          <div class="wrapperFlip">
+            <div class="ian">
+              <div class="section-3__heading">
+                <span>
+                  <h3>이안쳉:세계건설</h3>
+                  <h2>전시개요</h2>
+                </span>
+                <span>
+                  <h3>ART SPECTRUM<br />2022</h3>
+                  <h2>전시개요</h2>
+                </span>
+              </div>
+              <div class="section-3__body">
+                <span class="cursorMano" id="ianBtn">
+                  <h3>
+                    <i class="fa fa-angle-double-left" ></i> 다른 전시 보기
+                  </h3>
+                </span>
+                <span>
+                  <h3>
+                   작가의 주요 작품을 모두 망라한 이번 전시는 비디오게임 엔진을 사용해 개발된 라이브 시뮬레이션 작업인&lt;사절(Emissaries) &gt; 삼부작(2015-2017)과 시뮬레이션 속에 사는 생각과 감정을 가진 인공 생명체 &lt;BOB(Bag of Beliefs)&gt;(2018-2019), 그리고 작가의 인간 의식에 대한 탐구와 SF적 상상력을 유감없이 보여주는 최신작 &lt;BOB 이후의 삶(Life After BOB)&gt;(2021)으로 이루어져 있습니다. 작가가 “영원히 반복해서 스스로 플레이 되는 비디오게임”이라고 부르는 <사절> 삼부작은 고대에서부터 미래에 이르기까지 인간 인식의 진화 과정에 대한 작가의 상상력을 보여줍니다.
+                  </h3>
+                  <h3>
+                   뱀의 형상을 한 인공 생명체 BOB은 한 사람에게 여러가지 모습이 있고 상황에 따라서 다른 면이 튀어나오는 것처럼 여러 종류의 인공지능으로 이루어져 있습니다. 각각의 인공지능은 주도권을 잡기 위해 경쟁하면서 인간의 의식이 작동하는 방식을 구현합니다. 관람자는 BOB 앱을 다운받아서 마치 부모가 자식에게 가치관을 가르치고 성향을 물려주듯이 BOB의 성격 형성에 영향을 미칠 수 있습니다. 마지막으로 &lt;BOB 이후의 삶(Life After BOB)&gt;은 “인공지능이 나보다 내 삶을 더 잘 살아낼 수 있다면?”이라는 질문을 던지는 애니메이션 작품으로, 2부로 이루어져 있습니다. 작품의 주인공 찰리스는 신경계에 인공지능 BOB이 이식된 소녀로, BOB은 순간마다 최적의 인생 경로를 시뮬레이션 하면서 찰리스가 그에 부합하는 선택을 하도록 유도합니다. 관람자는 1부에서 애니메이션을 감상하고 2부에서 인터랙티브 기능을 사용해 작가가 영상 속에 구현한 세계를 자세히 살펴볼 수 있습니다.
+                  </h3>
+                </span>
+              </div>
+            </div>
+
+            <div class="artSpec">
+              <div class="section-3__heading">
+                <span>
+                  <h3>ART SPECTRUM<br />2022</h3>
+                  <h2>전시개요</h2>
+                </span>
+                <span>
+                   <h3>이안쳉:세계건설</h3>
+                  <h2>전시개요</h2>
+                </span>
+              </div>
+              <div class="section-3__body">
+                <span class="cursorMano"  id="artSpecBtn">
+                  <h3>
+                    <!-- 아이콘 -->
+                    <i class="fa fa-angle-double-left"></i>
+                     
+                    다른 전시 보기
+                  </h3>
+                </span>
+               <span>
+                  <h3>
+                    아트스펙트럼은 2001년 호암갤러리에서 격년제 청년작가 서베이
+                    전시로 처음 시작되었습니다. 이후 2003년 호암갤러리의 마지막
+                    전시로 개최하였으며, 2006년부터 리움에서 아트스펙트럼 전시를
+                    이어서 진행하고 있습니다. 2012년까지는 리움 큐레이터만이
+                    작가를 추천하였으나, 2014년부터는 보다 다양한 시각을 반영하기
+                    위해 리움 큐레이터 뿐 아니라 외부 평론가와 큐레이터에게 작가
+                    선정을 의뢰하기 시작했습니다. 또한 열린 추천으로 더욱 다양해진
+                    작가들의 창작 의지를 고취시기기위해 별도의 심사위원단이 작가
+                    중 1인을 선정하여 작가상을 시상하였습니다. 2022년 아트스펙트럼
+                    전시는 내외부 추천위원이 작가를 추천하였고, 전시 기간 중
+                    심사위원단이 작가상 수상자를 선정할 예정입니다.
+                  </h3>
+                  <h3>
+                    아트스펙트럼의 20년 역사 동안 한국 현대미술계는 급격히
+                    변화하였습니다. 회화나 조각 같은 전통 장르를 넘어 영상과
+                    설치가 주류를 이루는가 하면, 퍼포먼스와 관객 참여 같은 새로운
+                    접근도 일상화 되었습니다. 국내외에서 수학한 젊은 작가들은
+                    다양한 시도로 장르의 범위를 넘나들고, 전시 관람의 형태를
+                    다양화하며 미술의 영역을 넓혀 나갔으며, 세대, 젠더 같은 새로운
+                    구분을 통해 이전 시대와 차별화되는 작가 정체성을 확립해가고
+                    있습니다.
+                  </h3>
+                </span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <!-- 작가 섹션 -->
+        <section id="sec4" class="ibx slideUp section-4">
+          <div class="section-4__heading">
+            <div class="preventClick"></div>
+            <h2>작가</h2>
+          </div>
+          <div class="section-4__chevron upBtn">
+            <i class="fa fa-chevron-up fa-3x cursorMano chevrons"></i>
+          </div>
+          <div class="section-4__body">
+            <ul id="slide" class="desktop">
+              <li
+                class="cont__card c1"
+                id="c1"
+                onmouseenter="opacity0('c1')" onmouseleave="opacity1('c1')" onclick="showVid('v1')"
+              >
+                <div class="cont__card-int">
+                  <div class="cont__card__img card-pos-absolute"></div>
+                  <div class="cont__card__img sec"></div>
+                </div>
+                <div class="cont__card__name"><h1>Ayoung Kim</h1></div>
+              </li>
+              <li
+                class="cont__card c2"
+                id="c2"
+                onmouseenter="opacity0('c2')" onmouseleave="opacity1('c2')" onclick="showVid('v2')"
+
+              >
+                <div class="cont__card__name"><h1>Yi-Bool</h1></div>
+                <div class="cont__card-int">
+                  <div class="cont__card__img card-pos-absolute"></div>
+                  <div class="cont__card__img sec"></div>
+                </div>
+              </li>
+              <li
+                class="cont__card c3"
+                id="c3"
+                onmouseenter="opacity0('c3')" onmouseleave="opacity1('c3')" onclick="showVid('v3')"
+
+              >
+                <div class="cont__card-int">
+                  <div class="cont__card__img card-pos-absolute"></div>
+                  <div class="cont__card__img sec"></div>
+                </div>
+                <div class="cont__card__name"><h1>Oksun Kim</h1></div>
+              </li>
+              <li
+                class="cont__card c4"
+                id="c4"
+                onmouseenter="opacity0('c4')" onmouseleave="opacity1('c4')" onclick="showVid('v4')"
+
+              >
+                <div class="cont__card__name"><h1>Wan Lee</h1></div>
+                <div class="cont__card-int">
+                  <div class="cont__card__img card-pos-absolute"></div>
+                  <div class="cont__card__img sec"></div>
+                </div>
+              </li>
+              <li
+                class="cont__card c5"
+                id="c5"
+                onmouseenter="opacity0('c5')" onmouseleave="opacity1('c5')" onclick="showVid('v5')"
+
+              >
+                <div class="cont__card-int">
+                  <div class="cont__card__img card-pos-absolute"></div>
+                  <div class="cont__card__img sec"></div>
+                </div>
+                <div class="cont__card__name"><h1>Hongsuk</h1></div>
+              </li>
+              <li
+                class="cont__card c6"
+                id="c6"
+                onmouseenter="opacity0('c6')" onmouseleave="opacity1('c6')" onclick="showVid('v6')"
+
+              >
+                <div class="cont__card__name"><h1>Minha Park</h1></div>
+                <div class="cont__card-int">
+                  <div class="cont__card__img card-pos-absolute"></div>
+                  <div class="cont__card__img sec"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="authorVideoScreen" >
+            <div class="top__title__videoFBox authorScreenAbsolute " id="v1">
+              <div class="plyr__video-embed player player2">
+                <iframe width=80% height=100% preload="auto" src="https://www.youtube.com/embed/_FkdJy-7S_k?controls=0?theme=dark&amp;autoplay=0&amp;autohide=0&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;mute=0&amp;loop=1&amp;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            <div class="closeBtn authorCloseBtn">
+              <i class="fa fa-window-close cursorMano"></i>
+            </div>
+          </div> 
+            <div class="top__title__videoFBox authorScreenAbsolute" id="v2">
+              <div class="plyr__video-embed player player2">
+                <iframe
+                  width="80%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/D-38BwYMz2Q?controls=0?theme=dark&amp;autoplay=0&amp;autohide=0&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;mute=0&amp;loop=1&amp;"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            <div class="closeBtn authorCloseBtn">
+              <i class="fa fa-window-close cursorMano"></i>
+            </div>
+          </div> 
+
+            <div class="top__title__videoFBox authorScreenAbsolute" id="v3">
+              <div class="plyr__video-embed player player2">
+               <iframe
+                  width="80%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/bSIvzbaQ9EU?controls=0?theme=dark&amp;autoplay=0&amp;autohide=0&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;mute=0&amp;loop=1&amp;"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            <div class="closeBtn authorCloseBtn">
+              <i class="fa fa-window-close cursorMano"></i>
+            </div>
+          </div> 
+            <div class="top__title__videoFBox authorScreenAbsolute" id="v4">
+              <div class="plyr__video-embed player player2">
+<iframe
+    width="80%"
+    height="100%"
+    src="https://www.youtube.com/embed/FzA90Her2AU?controls=0?theme=dark&amp;autoplay=0&amp;autohide=0&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;mute=0&amp;loop=1&amp;"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+              </div>
+            <div class="closeBtn authorCloseBtn">
+              <i class="fa fa-window-close cursorMano"></i>
+            </div>
+          </div> 
+            <div class="top__title__videoFBox authorScreenAbsolute" id="v5">
+              <div class="plyr__video-embed player player2">
+              <iframe
+    width="80%"
+    height="100%"
+    src="https://www.youtube.com/embed/5bmZaF56xfM?controls=0?theme=dark&amp;autoplay=0&amp;autohide=0&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;mute=0&amp;loop=1&amp;"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+              </div>
+            <div class="closeBtn authorCloseBtn">
+              <i class="fa fa-window-close cursorMano"></i>
+            </div>
+          </div> 
+            <div class="top__title__videoFBox authorScreenAbsolute" id="v6">
+              <div class="plyr__video-embed player player2">
+  <iframe
+    width="80%"
+    height="100%"
+    src="https://www.youtube.com/embed/Z64JhAqwRfE?controls=0?theme=dark&amp;autoplay=0&amp;autohide=0&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;mute=0&amp;loop=1&amp;"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+              </div>
+            <div class="closeBtn authorCloseBtn">
+              <i class="fa fa-window-close cursorMano"></i>
+            </div>
+          </div> 
+
+          <div class="section-4__chevron downBtn">
+            <i class="fa fa-chevron-down fa-3x cursorMano chevrons"></i>
+          </div>
+        </section>
+        <section id="sec5" class="section-5 slideUp wrapper">
+          <div class="section-5_bg cont" id="cont_2">
+            <div class="section-5__heading leftPadding">
+              <span>
+                <h2>소장품</h2>
+              </span>
+            </div>
+            <div class="section-5__body" id="slider">
+              <div class="section-5__body__box sec5intro">
+                <div>
+                  <h3>
+                    리움미술관은 1910년대 이후의 한국 근현대미술부터 동시대
+                    국제미술까지 다양한 현대미술품을 소장하고 있습니다.
+                    서양미술의 유입 이후 한국 근현대미술은 전통을 계승하는 한편
+                    혁신적 변화로 현대화를 꾀하며 복잡다단한 한 세기를
+                    지나왔습니다. 리움의 한국미술 소장품은 그 역사를 이뤄온
+                    수많은 작가들의 작품으로 이루어져 있으며, 한국미술의 미래를
+                    이끌 젊은 작가들의 작품까지 폭넓고 다양하게 구성되어
+                    있습니다.
+                  </h3>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-1">
+                <div class="secArtBox secArt-1"></div>
+                <div>
+                  <h3>
+                    볼프강 라이프 <br />
+                    장소도 시간도 실체도 없는
+                  </h3>
+                  <h4>
+                    2003 밀랍, 나무<br />
+                    전시중 ( M2 , BF )
+                  </h4>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-2">
+                <div class="secArtBox secArt-2"></div>
+                <div>
+                  <h3>
+                    프랑크 게리<br />
+                    무제(로스앤젤레스 I), 무제(로스앤젤레스 IV) (일부)
+                  </h3>
+                  <h4>
+                    2012-2013 철사, 플라스틱 라미네이트(컬러코어), 실리콘<br />
+                    전시중 ( M2 , BF )
+                  </h4>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-3">
+                <div class="secArtBox secArt-3"></div>
+                <div>
+                  <h3>
+                    김홍석<br />
+                    비닐봉지
+                  </h3>
+                  <h4>
+                    2011, 청동<br />
+                    전시중 ( M2 , 2F )
+                  </h4>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-4">
+                <div class="secArtBox secArt-4"></div>
+                <div>
+                  <h3>
+                    이사무 노구치 <br />
+                    고독
+                  </h3>
+                  <h4>
+                    1962, 청동, 검정색 파티나<br />
+                    전시중 ( M2 , 2F )
+                  </h4>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-5">
+                <div class="secArtBox secArt-5"></div>
+                <div>
+                  <h3>
+                    살바도르 달리 <br />
+                    우주 코끼리
+                  </h3>
+                  <h4>1980, 청동, 수지</h4>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-6">
+                <div class="secArtBox secArt-6"></div>
+                <div>
+                  <h3>
+                    폴 매카시 <br />
+                    설백(雪白) 난쟁이(행복이)
+                  </h3>
+                  <h4>
+                    2010, 실리콘<br />
+                    전시중 ( M2 , 2F )
+                  </h4>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-7">
+                <div class="secArtBox secArt-7"></div>
+                <div>
+                  <h3>
+                    루이즈 부르주아<br />
+                    숲(밤의 정원)
+                  </h3>
+                  <h4>
+                    1953, 청동에 갈색과 검정색 파티나, 흰색 페인트전시중<br />
+                    ( M2 , 2F )
+                  </h4>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-8">
+                <div class="secArtBox secArt-8"></div>
+                <div>
+                  <h3>
+                    올라퍼 엘리아슨 <br />
+                    당신의 예측 불가능한 여정
+                  </h3>
+                  <h4>
+                    2016,유리 구슬, 은, 금, 페인트, 색유리 구슬, 스테인리스
+                    스틸, 합판<br />
+                    전시중 ( M2 , BF )
+                  </h4>
+                </div>
+              </div>
+              <div class="section-5__body__box sec5-9">
+                <div class="secArtBox secArt-9"></div>
+                <div id="exitHScrollZone"></div>
+                <div>
+                  <h3>
+                    이불 <br />
+                    무제
+                  </h3>
+                  <h4>
+                    2010, EVA <br />
+                    패널전시중 ( M2 , 1F )
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sec6" class="section-6 slideUp">
+          <div class="section-6__heading ibx leftPadding">
+            <h2>미디어 속 리움</h2>
+          </div>
+          <div class="fbx">
+            <div class="tbx slideLeft" style="display: flex">
+              <div id="textLength1">
+                <h1>- 팟캐스트 - 교양을 훔치는 가장 완벽한 방법</h1>
+              </div>
+              <div>
+                <h1>- 팟캐스트 - 교양을 훔치는 가장 완벽한 방법</h1>
+              </div>
+              <div>
+                <h1>- 팟캐스트 - 교양을 훔치는 가장 완벽한 방법</h1>
+              </div>
+              <div>
+                <h1>- 팟캐스트 - 교양을 훔치는 가장 완벽한 방법</h1>
+              </div>
+            </div>
+            <div class="tbx slideRight" style="display: flex">
+              <div id="textLength2">
+                <h1>2-1 전시 가본 척 하기 (리움미술관)</h1>
+              </div>
+              <div>
+                <h1>2-1 전시 가본 척 하기 (리움미술관)</h1>
+              </div>
+              <div>
+                <h1>2-1 전시 가본 척 하기 (리움미술관)</h1>
+              </div>
+              <div>
+                <h1>2-1 전시 가본 척 하기 (리움미술관)</h1>
+              </div>
+            </div>
+          </div>
+          <div class="audioSection">
+            <audio
+              onloadstart="this.volume=0.09"
+              data-v-5e8a5b1a=""
+              src="https://file.ssenhosting.com/data1/welldeer/0201.mp3?cmad=2f64617461312f77656c6c646565722f303230315f6133312e6d7033"
+            ></audio>
+          </div>
+          <!-- <div class="videoSection ibx">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Tyd3Rm-8qJk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div> -->
+         
+          <ul class="videosGrid">
+            
+              <li class="item i1"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/_eMOe_TbX1k?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i2"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/67Q0p_Rv8nc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i3"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/gDRB4rV51xc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i4"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/Ew1EO2YNcBY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i5"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/_5wz6mjX4uQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i6"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/L7ZkWBlfvdA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i7"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/CI3j9gURacI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i8"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/8AnlgWHZs80?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i9"><iframe  height="100%"
+  width="100%"  src="https://www.youtube.com/embed/FXwH4fkz6So?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li class="item i10"><iframe   height="100%"
+  width="100%"  src="https://www.youtube.com/embed/5Eq9Wkj4UzY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+
+                      <!-- 아이콘 -->
+                      <div class="revealVideos">
+            <div class="articleSection ibx">
+              <p>
+                리움은 과거와 현재를 바탕으로 미래를 함께
+                모색하고, 시대와 장르를 초월한 융합미술관으로 관객과 함께 향유하고
+                소통하는 문화적 공간이 되고자 합니다. 관객들이 제작한 소셜 미디어를 통해 이러한 리움 미술관의 대기를 느껴보세요.
+              </p>
+                          <span class="cursorMano" id="moreBtn">
+                    <h3>
+                      <!-- 아이콘 -->
+                      <i class="fa fa-angle-double-down" id="moreBtn" ></i> 더보기
+                    </h3>
+                  </span>
+            </div>
+          </div>    
+          </ul>
+      
+        </div>
+        </section>
+
+        <section id="sec7" class="section-7 slideUp">
+          <div class="section-7__heading ibx leftPadding">
+            <h2>공간</h2>
+          </div>
+          <div class="section-7__body">
+            <p>
+              리움미술관의 건축 설계는 세계적 건축가, 마리오 보타, 장 누벨, 렘
+              쿨하스, 세 사람이 맡았습 니다. 하나의 미술관을 위해 각기 개성이
+              다른 우리 시대 최고의 건축가들이 모인 것은 세계 속에서도 그 예가
+              드문 역사적 사건입니다.
+            </p>
+            <div><a href="#" class="ir">장 누벨 프로필</a></div>
+            <div><a href="#" class="ir">장 누벨 건축물</a></div>
+            <div><a href="#" class="ir">마리오 보타 프로필</a></div>
+            <div><a href="#" class="ir">마리오 보타 건축물</a></div>
+            <div><a href="#" class="ir">렘 쿨하스 프로필</a></div>
+            <div><a href="#" class="ir">렘 쿨하스 건축물</a></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="info">
+      <footer class="info info-columns">
+        <div class="info-column__1">
+          <div class="info-column__1__row1 row1">
+            <address class="info-c1-row1">
+              리움미술관 <br />
+              서울특별시 용산구 이태원로55길 60-16 04348 <br />
+              (Tel) 02-2014-6900
+            </address>
+          </div>
+          <div class="info-column__1__row2 row2">
+            <h3>개인정보 처리방침</h3>
+          </div>
+        </div>
+        <div class="info-column__2">
+          <div class="info-column__2__row1">
+            <select>
+              <option value="#">Family Site</option>
+              <option value="http://www.samsungculture.org">
+                삼성문화재단
+              </option>
+              <option value="http://www.hoammuseum.org/html/main/index.asp">
+                호암미술관
+              </option>
+            </select>
+          </div>
+          <div class="info-column__2__row2">
+            <h3>© Leeum Museum of Art. All Rights reserved.</h3>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/searchBar.js"></script>
+  </body>
+</html>

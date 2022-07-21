@@ -1,0 +1,93 @@
+@import url(./common.css);
+@import url(./core.css);
+@import url(./reset.css);
+@import url(./mediaQuery.css);
+
+/* 아이콘 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css");
+
+#cont {
+  width: max(450px);
+  margin: 0 auto;
+  padding: 60px;
+}
+.membership {
+  text-align: center;
+  margin-top: calc(var(--nav-height) * 3);
+  height: min(800px);
+  width: 100%;
+  /* outline: red solid 1px; */
+}
+.gray {
+  color: rgba(128, 128, 128, 0.771);
+}
+.white {
+  color: white;
+}
+
+.membership b {
+  font-size: 1.5rem;
+}
+.membership h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.membership h5 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 0.5rem;
+}
+.membership span {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.membership li {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.membership input {
+  margin-left: 10px;
+  width: max(158px);
+}
+
+.membership .findId {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.35rem 0 0.5rem 0;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+.loginBtn {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.2rem 0 0.2rem 0.8rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+}
+.membership .memberQ {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.4rem 0 0.2rem 0;
+  border-top: solid 1px rgba(128, 128, 128, 0.456);
+  font-size: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.signInBtn {
+  border: 1px solid rgba(128, 128, 128, 0.456);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.4rem 0 0.4rem 0.8rem;
+}
+
+.cursorMano {
+  cursor: url(../img/svg/64px-Mano_cursor.svg.png) 24 0, pointer;
+}

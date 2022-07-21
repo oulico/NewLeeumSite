@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leeum</title>
+    <link rel="stylesheet" href="./css/membership.css" />
+
+
+    <script src="./js/plyr.min.js"></script>
+    <script src="./js/core.js"></script>
+  </head>
+
+  <!-- 
+  [ 명명원칙 ]
+  1. 이중 박스
+  2. 시맨틱 내용과 가장 근접하게 내용삽입. (div안에 시맨틱)
+  3. 하위 구조는 상위 구조의 이름을 상속해서 명명한다. (.top .top__menu)
+
+
+ -->
+  <!-- 바디 시작 -->
+  <body class="scbar">
+    <!-- 헤더 -->
+    <div id="top">
+      <header class="top">
+        <div class="top__title">
+          <a class="cursorMano" href="./index.html">
+            <div class="title">
+              <img src="assets/leeumLogo.png" alt="LEEUM" />
+            </div>
+          </a>
+          <!-- 스프라이트를 활용한 sns 이미지  -->
+          <aside>
+            <ol class="sns cursorMano">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCyXVnJijxHsBrzN9AAZ-Yxw"
+                >
+                  <span class="ir" title="리움의 트위터로 이동합니다"
+                    >트위터 바로가기</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/leeummuseumofart/"
+                >
+                  <span class="ir" title="리움의 인스타그램으로 이동합니다"
+                    >인스타그램 바로가기</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/leeumofficial"
+                >
+                  <span class="ir" title="리움의 페이스북으로 이동합니다"
+                    >페이스북 바로가기</span
+                  ></a
+                >
+              </li>
+              <li id="searchBar">
+                <span class="ir">검색</span>
+              </li>
+              <li id="searchBlank" class="on">
+                <input type="text" placeholder="Search.." />
+              </li>
+            </ol>
+          </aside>
+        </div>
+
+    <nav class="gnb">          
+          <div class="searchBarMobile">
+            <div class="searchContainer">
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="Search" id="searchBarMobile" class="searchBlankMobile">
+            </div>
+          </div>
+          <div class="ellipse">
+            <ul>
+              <li class="menu-1 cursorMano">
+                <a href="./index.html#top">HOME</a>
+              </li>
+              <li class="menu-2 cursorMano">
+                <a href="./index.html#sec3">전시개요</a>
+              </li>
+              <li class="menu-3 cursorMano">
+                <a href="./index.html#sec4">작가</a>
+              </li>
+              <li class="menu-4 cursorMano">
+                <a href="./index.html#sec5">작품</a>
+              </li>
+              <li class="menu-5 cursorMano">
+                <a href="./index.html#sec6">미디어</a>
+              </li>
+              <li class="menu-5 cursorMano">
+                <a href="./index.html#sec7">공간</a>
+              </li>
+              <li class="menu-2 cursorMano">
+                <a href="./membership.html">멤버스</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+    <div class="contMembers" id="cont">
+      <div class="cont ibx">
+        <div class="membership">
+          <b>Members' Lounge</b>
+          <h4>멤버스 로그인</h4>
+          <h5 class="gray">
+            멤버스 라운지는 멤버십 전용 페이지 입니다.<br />
+            멤버십 가입 후 이용하실 수 있습니다.
+          </h5>
+          <ol>
+            <li>
+              <span>아이디</span>
+              <input type="memberId" class="cursorMano" />
+            </li>
+            <li>
+              <span>비밀번호</span>
+              <input type="memberPassword" class="cursorMano" />
+            </li>
+          </ol>
+          <div>
+            <a class="cursorMano" href="#"><span class="gray findId">아이디 / 비밀번호찾기</span></a>
+          </div>
+          <div class="loginBtn cursorMano">
+            <span class="white ">로그인 →</h5>
+          </div>
+          <div>
+            <span class="gray memberQ">아직 멤버십회원이 아니신가요?</span>
+          </div>
+          <div class="signInBtn cursorMano">
+            <span class="gray ">멤버십 가입안내 →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info">
+      <footer class="info info-columns">
+        <div class="info-column__1">
+          <div class="info-column__1__row1 row1">
+            <address class="info-c1-row1">
+              리움미술관 <br />
+              서울특별시 용산구 이태원로55길 60-16 04348 <br />
+              (Tel) 02-2014-6900
+            </address>
+          </div>
+          <div class="info-column__1__row2 row2">
+            <h3>개인정보 처리방침</h3>
+          </div>
+        </div>
+        <div class="info-column__2">
+          <div class="info-column__2__row1">
+            <select>
+              <option value="#">Family Site</option>
+              <option value="http://www.samsungculture.org">
+                삼성문화재단
+              </option>
+              <option value="http://www.hoammuseum.org/html/main/index.asp">
+                호암미술관
+              </option>
+            </select>
+          </div>
+          <div class="info-column__2__row2">
+            <h3>© Leeum Museum of Art. All Rights reserved.</h3>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+        <script src="./js/searchBar.js"></script>
+  </body>
+</html>

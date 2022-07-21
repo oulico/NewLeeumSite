@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* font */
+  font-size: 2vh;
+
+  /************* var **************/
+  /* nav height*/
+  --nav-height: 80px;
+  --color-black: rgb(28, 28, 28);
+}
+
+.cursorMano * {
+  cursor: url(../img/svg/64px-Mano_cursor.svg.png) 24 16, pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Oswald", sans-serif;
+}
+/* common */
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.leftPadding {
+  padding-left: 6vw;
+}
+/* fontsize */
+
+h3,
+p {
+  font-family: "Oswald", "Nanum", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Oswald", "Nanum", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: "Oswald", "Nanum", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 8rem;
+  white-space: nowrap;
+}
+
+.ibx {
+  box-sizing: border-box;
+  margin: 0 auto;
+  /* width: min(1440px, 100vw); */
+}
+.title {
+  display: inline-block;
+  margin-top: 24px;
+  margin-left: 20px;
+}
+
+aside {
+  float: right;
+}
+aside::after {
+  clear: both;
+}
+
+aside ol li {
+  display: inline-block;
+  margin: 0 5px 0;
+}
+
+.gnb ul {
+  margin: 15px 20px 15px;
+}
+.gnb ul > li {
+  display: inline;
+  margin: 0 5px 0;
+  font-size: 20px;
+}
+
+.gnb ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .gnb {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* todo: 검색창 위로 2px 밀고싶은데, 기준이 이상한데 로 잡힘 */
+.gnb ul > li::after {
+  clear: both;
+}
+li.menu-3 {
+  position: relative;
+}
+.menu-3__smenu {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  /* background-color: white; */
+  transition: height ease-in-out 0.4s;
+  /* margin-top: 4px; */
+  height: 0;
+  margin-top: 15px;
+  margin-left: -15px;
+  background-color: white;
+  width: 95px;
+  border-bottom: 2px solid black;
+}
+li.menu-3:hover .menu-3__smenu {
+  width: 95px;
+  margin-top: 15px;
+  background-color: white;
+  height: 89px;
+  border-bottom: 2px solid black;
+  margin-left: -15px;
+  padding-bottom: 15px;
+}
+.menu-3__smenu > ol {
+  margin: 0 15px 15px 15px;
+}
+
+.clb li {
+  display: inline;
+  margin: 0 30px 0;
+}
+
+.clb > li:nth-child(2),
+.clb > li:nth-child(3) {
+  float: right;
+}
+
+/* footer */
+footer {
+  padding: 5vw;
+}
+.info {
+  height: 30vh;
+
+  background-color: rgb(28, 28, 28);
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  color: aliceblue;
+}
+.info-column__1,
+.info-column__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .info-column__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+/* cursor */
+
+* {
+  cursor: url(../img/svg/dotBlack.png) 32 32, pointer;
+}
