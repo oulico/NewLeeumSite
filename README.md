@@ -231,6 +231,8 @@
 
 읽어주셔서 감사합니다.
 
-실제 사이트는 다음의 링크에서 보실 수 있습니다.
+실제 사이트는 다음의 [링크](http://oulico.dothome.co.kr/newleeum/index.html)에서 보실 수 있습니다.
 
-http://oulico.dothome.co.kr/
+http://oulico.dothome.co.kr/newleeum/index.html
+
+다른 프로젝트도 살펴보시려면 : [링크](ljh.world)
