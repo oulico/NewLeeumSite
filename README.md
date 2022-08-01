@@ -235,4 +235,4 @@
 
 http://oulico.dothome.co.kr/newleeum/index.html
 
-다른 프로젝트도 살펴보시려면 : [링크](ljh.world)
+다른 프로젝트도 살펴보시려면 : ljh.world
